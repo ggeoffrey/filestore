@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: org.apache.mina/mina-codec:3.0.0-M2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/mina/mina-codec/3.0.0-M2/mina-codec-3.0.0-M2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

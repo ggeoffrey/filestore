@@ -26,12 +26,21 @@
                  [ring-middleware-format "0.7.0"]
                  [ring-webjars "0.1.1"]
                  [ring/ring-defaults "0.2.1"]
-                 [selmer "1.10.0"]]
+                 [selmer "1.10.0"]
+                 [org.immutant/immutant "2.1.5"]
+
+                 ;; ftp
+                 [org.apache.ftpserver/ftpserver-core "1.1.0"]
+                 [org.apache.ftpserver/ftplet-api "1.1.0"]
+                 [org.slf4j/slf4j-simple "1.7.21"]
+                 [org.slf4j/slf4j-api "1.7.21"]
+                 [org.apache.mina/mina-core "3.0.0-M2"]]
 
   :min-lein-version "2.0.0"
 
   :jvm-opts ["-server" "-Dconf=.lein-env"]
   :source-paths ["src/clj"]
+  :java-source-paths ["src/java"]
   :resource-paths ["resources"]
   :target-path "target/%s/"
   :main filestore.core
@@ -56,7 +65,7 @@
                                  [ring/ring-devel "1.5.0"]
                                  [pjstadig/humane-test-output "0.8.1"]]
                   :plugins      [[com.jakemccrary/lein-test-refresh "0.14.0"]]
-                  
+
                   :source-paths ["env/dev/clj" "test/clj"]
                   :resource-paths ["env/dev/resources"]
                   :repl-options {:init-ns user}
