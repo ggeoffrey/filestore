@@ -34,7 +34,8 @@
                  [org.apache.ftpserver/ftplet-api "1.1.0"]
                  [org.slf4j/slf4j-simple "1.7.21"]
                  [org.slf4j/slf4j-api "1.7.21"]
-                 [org.apache.mina/mina-core "3.0.0-M2"]]
+                 [org.apache.mina/mina-core "3.0.0-M2"]
+                 [commons-validator/commons-validator "1.4.0"]]
 
   :min-lein-version "2.0.0"
 
